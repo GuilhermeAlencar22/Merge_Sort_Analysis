@@ -1,5 +1,7 @@
 # Merge Sort – Análise Teórica e Experimental 
 
+Integrantes : Guilherme Alencar, Henrique Lobo e Luiz Felipe Soriano
+
 ## 📑 Objetivo
 Investigar o desempenho **teórico** e **empírico** do algoritmo **Merge Sort** em duas linguagens de programação distintas (**Python** e **Java**), produzindo:
 1. Slides de apresentação (Entrega 1).  
