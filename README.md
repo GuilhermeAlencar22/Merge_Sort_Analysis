@@ -6,9 +6,8 @@ Integrantes : Guilherme Alencar, Henrique Lobo e Luiz Felipe Soriano
 
 Investigar o desempenho **teórico** e **empírico** do algoritmo **Merge Sort** em duas linguagens de programação distintas (**Python** e **C**), produzindo:
 
-1. Slides de apresentação (Entrega 1).
-2. Relatório técnico em PDF contendo análise completa (Entrega 2).
-3. Código‑fonte totalmente reprodutível, scripts de benchmark e resultados.
+1. Relatório técnico em PDF contendo análise completa (Entrega 2).
+2. Código‑fonte totalmente reprodutível, scripts de benchmark e resultados.
 
 ## 🧩 Algoritmo estudado
 
