@@ -1,43 +1,47 @@
-# Merge Sort – Análise Teórica e Experimental
+# 🧠 Merge Sort — Análise Teórica e Experimental
 
-Integrantes : Guilherme Alencar, Henrique Lobo e Luiz Felipe Soriano
+**Integrantes:** Guilherme Alencar, Henrique Lobo e Luiz Felipe Soriano
+
+---
 
 ## 📑 Objetivo
 
-Investigar o desempenho **teórico** e **empírico** do algoritmo **Merge Sort** em duas linguagens de programação distintas (**Python** e **C**), produzindo:
+Analisar de forma **teórica** e **empírica** o comportamento do algoritmo **Merge Sort** utilizando duas linguagens de programação distintas: **C** (baixo nível, compilada) e **Python** (alto nível, interpretada). O projeto contempla:
 
-1. Relatório técnico em PDF contendo análise completa (Entrega 2).
-2. Código‑fonte totalmente reprodutível, scripts de benchmark e resultados.
+1. 📄 Um **relatório técnico completo** em PDF (Entrega 2), contendo análise de complexidade, desempenho, aplicabilidade prática e reflexões finais.
+2. 💻 Código‑fonte reprodutível, com scripts automatizados de benchmark e geração de gráficos.
 
-## 🧩 Algoritmo estudado
+---
 
-**Merge Sort** (von Neumann, 1945) é um algoritmo de ordenação **estável** baseado na estratégia *divide‑and‑conquer*:
+## 🧩 Algoritmo Estudado
 
-1. **Dividir** o vetor em duas metades recursivamente;
-2. **Ordenar** cada metade;
-3. **Mesclar** as subsequências ordenadas em um único vetor ordenado.
+**Merge Sort** (proposto por John von Neumann, 1945) é um algoritmo de ordenação **estável** que utiliza a estratégia *Divide and Conquer*:
 
-### Complexidade Assintótica
+1. **Dividir:** o array é recursivamente dividido ao meio;
+2. **Ordenar:** cada metade é ordenada de forma independente;
+3. **Mesclar:** os subarrays ordenados são combinados em um único array final.
+
+### 🔢 Complexidade Assintótica
 
 | Caso   | Comparações / Movimentos | Classe        |
-| ------ | ------------------------ | ------------- |
-| Melhor | ≈ *n log n*              | Ω(*n log n*)  |
+|--------|--------------------------|---------------|
+| Melhor | ≈ *n log n*              | Ω(*n log n*)  |
 | Médio  | *n log n*                | Θ(*n log n*)  |
-| Pior   | *n log n*                | 𝑂(*n log n*) |
-| Espaço | —                        | 𝑂(*n*)       |
+| Pior   | *n log n*                | O(*n log n*)  |
+| Espaço | —                        | O(*n*)        |
 
 ---
 
 ## 🔧 Aplicações Práticas
 
 | Cenário                              | Justificativa                                                                                      |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| **Grandes arquivos externos**        | Permite ordenação em disco, mesclando blocos em streaming.                                         |
-| **Listas ligadas**                   | A fusão pode ser feita por ponteiros, dispensando cópias extras.                                   |
-| **Sistemas que exigem estabilidade** | Mantém a ordem relativa de elementos iguais — essencial em rotinas de classificação múltipla.      |
-| **Paralelismo**                      | As chamadas recursivas são independentes, facilitando implementação paralela em múltiplos núcleos. |
+|--------------------------------------|------------------------------------------------------------------------------------------------------|
+| **Grandes arquivos externos**        | Permite ordenação em disco, mesclando blocos em streaming com uso eficiente de memória.              |
+| **Listas ligadas**                   | A mesclagem pode ser feita apenas com ponteiros, dispensando cópias adicionais.                     |
+| **Sistemas que exigem estabilidade** | Mantém a ordem relativa entre elementos com chaves iguais, essencial em ordenações múltiplas.       |
+| **Paralelismo**                      | Divisões recursivas são independentes, facilitando a execução paralela em múltiplos núcleos.        |
 
-⚠️ **Limitações**: uso de memória extra (𝑂(*n*)) torna‑o menos indicado em ambientes embarcados ou sistemas com RAM restrita.
+⚠️ **Limitação:** o uso de memória adicional O(n) pode ser um entrave em sistemas com recursos restritos.
 
 ---
 
